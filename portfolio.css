@@ -1,0 +1,425 @@
+@import 'utilities.css';
+
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;   
+    --secondary:#070606; 
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    --webkit-font-smoothing:antialiased;
+}
+
+.logo-name{
+    color:var(--pure)
+}
+
+header{
+    background:var(--dark);
+    height:800px;
+    font-family: 'Poppins',sans-serif;
+    background-image: url('https://wallpapercave.com/wp/wp2345386.png');
+    background-position: bottom;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 100%);
+}
+
+.default > a{
+    color:white;
+    text-decoration: none;
+    margin-right:2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.default > a:hover{
+    border-bottom:1.5px solid var(--pure);
+}
+
+
+.container{
+    max-width:1152px;
+    padding:2rem 15px;
+    margin:0 auto;
+    /* border:1px solid white; */
+}
+
+.logo-name > .logo__image{
+    height:50px;
+    width:40px;
+}
+
+.logo-name{
+    margin-right:3rem;
+}
+
+.logo__image{
+    margin-right:0.946rem;
+}
+
+.description{
+    color:var(--pure);
+    position:relative;
+    top:150px;
+    padding:25px;
+    width:700px;
+}
+
+.description > h5{
+    margin-top:10px;
+    font-size:20px;
+    color:var(--primary);
+    font-weight: 600;
+}
+
+.description > h1{
+    margin-top:1px;
+    padding:1px;
+    font-size:3rem;
+    margin-bottom:1rem;
+}
+
+.description > p{
+    margin-top:3px;
+    margin-bottom:2rem;
+}
+.resume{
+    margin-top:1rem;
+    padding-top:10px;
+}
+
+span{
+    color:var(--primary);
+}
+
+.about{
+    font-family:'Poppins',sans-serif;
+}
+
+
+section.about {
+    margin:5rem 7rem;
+}
+
+.about-img{
+    height:410px;
+    max-width:370px;
+    margin-left:9rem;
+    border-radius:7px;
+}
+.about-me{
+    margin-right:7rem;
+}
+
+.about-me > h1{
+    margin:1rem 0;
+    font-size:26px;
+    font-weight:400;
+}
+
+.about-me > h1 > span{
+    color:var(--primary);
+}
+
+.about-me > h3{
+    font-size:1.3rem;
+    font-weight:500;
+    margin-bottom: 1rem;
+}
+
+.about-me > p{
+    color:var(--ternary);
+    line-height:1.9;
+}
+
+.social{
+    margin-top:1rem;
+}
+
+.social > a{
+    padding:0.3rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social > a:hover{
+    color:var(--primary);
+}
+
+.work{
+    background:var(--light);
+    padding-top: 10px;
+    padding-bottom: 40px;
+    /* margin-bottom:rem; */
+}
+
+.work-container{
+    font-family:'Poppins',sans-serif;
+}
+
+.work-container > h1{
+    font-size:2rem;
+    margin-top:3rem;
+    margin-bottom: 2.3rem;
+    line-height:0.5;
+    font-weight: 500;
+    color:var(--secondary);
+    text-align:center;
+}
+
+.work-container > p{
+    font-size:1rem;
+    margin-bottom:2rem;
+    line-height:0.3;
+    color:var(--ternary);
+    text-align: center;
+}
+
+.work-container > h1 > span{
+    color:var(--primary);
+}
+
+
+section.work .card-wrapper{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:2rem;
+    grid-row-gap:2rem;
+}
+
+section.work .card-wrapper .card{
+    background:var(--pure);
+    padding:3rem 2rem;
+    margin:13px 3rem;
+    border-radius:10px;
+    transition: all .3s ease;
+    /* cursor: pointer; */
+}
+
+section.work .card-wrapper .card > h1{
+    text-align: center;
+    margin-bottom:1rem ;
+}
+
+section.work .card-wrapper .card > p{
+    text-align: center;
+    line-height: 1.6;
+}
+
+section.work .card-wrapper .card:hover{
+    background: var(--dark);
+    color:var(--pure);
+
+}
+
+section.freelancer{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 100%);
+}
+
+.freelancer{
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+    height:400px;
+    background-color:var(--dark);
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('https://x6w8x9r7.rocketcdn.me/wp-content/uploads/Hacking-optimised.jpg');
+    background-size: cover;
+    color:var(--pure);
+
+}
+
+.freelancer > h1{
+    padding-top: 3.4rem;
+    margin-bottom:0.78rem;
+    font-size:2rem;
+}
+
+.freelancer > p{
+    padding-bottom:10px;
+    margin-bottom:0.67rem;
+    font-size:17px;
+}
+
+.freelancer > button{
+    margin-top:0.678rem;
+}
+
+section.projects .project-container{
+    font-family: 'Lato',sans-serif;
+    text-align: center;
+    height:700px;
+}
+
+section.projects .project-container > h1{
+    font-size:2rem;
+    margin-top: 1rem;
+    padding-bottom:4px;
+}
+
+section.projects .project-container > p{
+    margin-top:0.4rem;
+    font-size: 18px;
+}
+
+.cardd > .airbnb{
+    height:220px;
+    width:330px;
+    box-shadow: 0 8px 16px -9px rgba(0,0,0,.75);
+    border-radius:12px;
+}
+
+section.projects .card-wrapp{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.cardd{
+    margin:1.4rem 1rem;
+    padding-top:14px;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.cardd:hover{
+    transform:scale(1.2);
+}
+
+section.contact{
+    height:800px;
+    background: #F8F8F8;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+}
+
+.contact-container > h1{
+    padding-top: 2rem;
+    font-size:26px;
+}
+
+.contact-container > p{
+    padding-top:8px;
+    font-size:17px;
+}
+
+section.contact .wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap:0.3rem;
+}
+
+section.contact .small-card{
+    margin-top:3.5rem;
+}
+
+section.contact .small-card > h3{
+    margin-top:1.6rem;
+}
+
+section.contact .small-card > p{
+    margin-top:5px;
+}
+
+
+section.contact .input-wrap{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+section.contact .remaining-part{
+    display:flex;
+    flex-direction: column;
+}
+
+section.contact .form{
+    margin-top:4rem;
+    padding:5px;
+    
+}
+
+section.contact .input-wrap > input{
+    padding:14px;
+    margin:1rem 2rem;
+    margin-top:10px;
+    border:1.8px solid var(--light);
+    font-size:0.9rem;
+    font-weight:500;
+}
+
+section.contact .remaining-part > input{
+    padding:14px;
+    margin:1rem 2rem;
+    margin-top:10px;
+    border:1.5px solid var(--light);
+    font-size:0.9rem;
+    font-weight:500;
+}
+
+section.contact .remaining-part > textarea{
+    padding:10px;
+    margin:1rem 2rem;
+    margin-top:10px;
+    border:1.5px solid var(--light);
+
+}
+
+section.contact .form input:focus{
+    outline-width:0;
+}
+
+section.contact .form textarea:focus{
+    outline-width:0;
+}
+
+section.contact .form .new-btn{
+    border:1px solid var(--primary);
+    color:var(--primary);
+    padding:0.67rem 3rem;
+    font-size:17px;
+    background: var(--pure);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+textarea{
+    resize: none;
+    font-size:14px;
+    font-family: 'Lato',sans-serif;
+    font-weight: 600;
+}
+
+
+section.contact .form .new-btn:hover{
+    border:2px solid var(--dark);
+}
+
+
+footer{
+    background: var(--secondary);
+    color:var(--pure);
+    font-family: 'Lato',sans-serif;
+    text-align: center;
+}
+
+footer .footer > p{
+    padding: 1rem 0;
+    font-size:15px;
+}
+
+.logo-2{
+    height:50px;
+    width:40px;
+    margin-top:6px;
+}
+
+footer .social > a{
+    color:var(--pure);
+}
